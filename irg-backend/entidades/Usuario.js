@@ -17,7 +17,7 @@ async function registrarUsuario({ nombre, apellidos, telefono, ciudad }) {
 }
 
 async function obtenerUsuarios() {
-  const [rows] = await pool.query('SELECT * FROM usuarios');
+  const [rows] = await pool.query('SELECT * FROM usuario');
   return rows;
 }
 
